@@ -1,0 +1,7 @@
+#!/usr/bin/python
+
+import sys
+
+sys.path = sys.path + ['.', '/usr/lib/ldtpeditor']
+execfile ('/usr/lib/ldtpeditor/ldtpeditor.py')
+
