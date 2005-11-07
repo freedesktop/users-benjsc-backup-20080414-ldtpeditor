@@ -4,7 +4,7 @@
 # Linux Desktop Testing Project http://www.gnomebangalore.org/ldtp
 #
 # Author:
-#    Khasim Shaheed <sshaik@novell.com>
+#    Khasim Shaheed <khasim.shaheed@gmail.com>
 #
 # Copyright 2004 Novell, Inc.
 #
