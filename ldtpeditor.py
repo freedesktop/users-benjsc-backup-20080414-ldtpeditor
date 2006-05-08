@@ -31,7 +31,7 @@ import sys
 import os.path
 
 import dialogs, xmldatadialog, syntax
-
+import recorder
 if sys.version_info[1] < 4:
 	print 'You should have Python version 2.4 or greater installed to run this program'
 	sys.exit(0)
@@ -151,7 +151,7 @@ class LDTPUIManager:
 				 ('Dedent Region', None, '_Dedent Region', '<Control>d',
 				  None, self.dedent_region_cb),
 				 ('Record', gtk.STOCK_HARDDISK, '_Record', '<Control>r',
-				  'Start recording', None),
+				  'Start recording', self.record_cb),
 				 ('Data XML', None, 'Data XML', None,
 				  'Create Data XML file', self.create_xml_data_file_cb),
 				 ('Contents', gtk.STOCK_HELP, '_Contents', 'F1',
@@ -799,6 +799,16 @@ class LDTPUIManager:
 
 	about_dialog.show()
 	
+    
+        
+    def record_cb(*args):
+        print "Recording"
+        recorder.recorder ()
+
+    def record_pause(*args):
+        print "pause"
+
+
     def open_url(self, a=None, b=None, c=None):
 	webbrowser.open('http://www.gnomebangalore.org/ldtp')
 
@@ -962,7 +972,7 @@ class LDTPUIManager:
 				continue
 
 			txtbuf.insert(iter, text)
-
+	 
     def dedent_region_cb(self, b):
 	sourceview = self.get_sourceview()
 

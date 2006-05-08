@@ -26,7 +26,7 @@
 
 from distutils.core import setup
 
-script_list = ('/usr/lib/ldtpeditor', ['ldtpeditor.py', 'dialogs.py', 'xmldatadialog.py', 'syntax.py'])
+script_list = ('/usr/lib/ldtpeditor', ['ldtpeditor.py', 'dialogs.py', 'xmldatadialog.py', 'syntax.py','recorder.py','browse.py'])
 data_file_list = ('/usr/lib/ldtpeditor', ['data_xml.glade', 'log_file.glade', 'ldtp-logo-small.png'])
 
 setup (name="ldtpedit",
