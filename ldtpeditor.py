@@ -5,6 +5,7 @@
 #
 # Author:
 #    Khasim Shaheed <khasim.shaheed@gmail.com>
+#    Shankar Ganesh <shagan.glare@gmail.com>
 #
 # Copyright 2004 Novell, Inc.
 #
@@ -804,10 +805,6 @@ class LDTPUIManager:
     def record_cb(*args):
         print "Recording"
         recorder.recorder ()
-
-    def record_pause(*args):
-        print "pause"
-
 
     def open_url(self, a=None, b=None, c=None):
 	webbrowser.open('http://www.gnomebangalore.org/ldtp')

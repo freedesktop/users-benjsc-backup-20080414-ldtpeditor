@@ -64,6 +64,7 @@ def toggle_button_callback(widget,data,entry,entry1):
 		sleep(2)
 		fp =os.open('/tmp/FromC',os.O_NONBLOCK,0777)
 		gobject.io_add_watch(fp,gobject.IO_IN,callback)
+		#WILL have to replace this with a NAMED Socket
       else:
 	widget.modify_bg(gtk.STATE_NORMAL, gtk.gdk.color_parse("#00ff00"))
 	widget.set_label("START")
